@@ -3,12 +3,14 @@
 body {
 	margin-left: 5%;
 	margin-right: 5%;
+	margin-bottom: 5%;
 }
 
 p {
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 16px;
 }
+
 
 .header {
 	background-color: pink;
@@ -70,35 +72,23 @@ p {
 
 /* Link Section */
 .links-section {
-	background-color: Red;
+	background-color: blue;
+	position: relative;
 	flex-basis: 100%;
-	position: relative;
-	text-align: center;
-	width: 100%;
-	height: 300px;
+}
+.links-section img{
+	width: 100%
 }
 
-.links-image {
-	background-color: yellow;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	background: url(queen_room.JPG);
-	width: 100%;
-	padding-bottom: 28%;
-	padding-top: 28%;
-	position: relative;
-	top: 50%;
-	transform: translate(0%, -50%);
-	
+
+.text-block {
+  position: inherit;
+  background-color: black;
+  color: white;
+  padding: 5px;
+  margins:5px;
 
 }
-
-.links-text {
-	text-align: center;
-	color: blue;
-}
-
 
 
 @media (min-width: 600px) {
@@ -107,12 +97,9 @@ body {
 	margin-left: 2%;
 	margin-right: 2%;
 }
-.links-section {
-	background-color: Red;
-	flex-basis: 100%;
-	position: relative;
-	text-align: center;
+.links-section img{
+	float: left;
 	width: 33.33%;
 }
-	
+
 }

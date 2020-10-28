@@ -1,9 +1,25 @@
 
 /* Micelanious Formating */
 body {
-	margin-left: 5%;
-	margin-right: 5%;
-	margin-bottom: 5%;
+	margin-left: 0%;
+	margin-right: 0%;
+	background-color: #6c756b;
+}
+
+.header {
+	background-color: pink;
+	flex-basis: 100%;
+}
+
+h1{
+	font-family: 'Caveat';
+	font-size: 17.5vw;
+	color: #341305;	
+}
+
+h2 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 24;	
 }
 
 p {
@@ -11,11 +27,6 @@ p {
 	font-size: 16px;
 }
 
-
-.header {
-	background-color: pink;
-	flex-basis: 100%;
-}
 
 
 /* Banner-Section */
@@ -27,9 +38,10 @@ p {
 }
 .banner-section img{
 	width: 100%;
+	filter: blur(2px);
+	-webkit-filter: blur(2px);
 }
 .centered {
-	font-size: 10vw;
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -40,12 +52,13 @@ p {
 /* Navigation Bar */
 .navbar {
 	overflow: hidden;
-	background-color: #333;
+	background-color: #707066;
+	font-family: Arial, Helvetica, sans-serif;
 }
 
 .navbar a {
 	float: right;
-	color: #f2f2f2;
+	color: black;
 	text-align: center;
 	padding: 14px 16px;
 	text-decoration: none;
@@ -53,26 +66,29 @@ p {
 }
 
 .navbar a:hover {
-	background-color: #ddd;
+	background-color: #615243;
 	color: black;
 }
 
 .navbar a.active {
-	background-color: #4CAF50;
-	color: white;
+	background-color: #84a59d;
+	color: #341305;
 }
 
 
 /* Body Section */
 .body-section {
-	background-color: green;
+	background-color: #cdeac0;
 	flex-basis: 100%;
+	margin-left: 6%;
+	margin-right: 6%;
+	padding: 2%;
+
 }
 
 
 /* Link Section */
 .links-section {
-	background-color: blue;
 	position: relative;
 	flex-basis: 100%;
 }
@@ -81,25 +97,22 @@ p {
 }
 
 
-.text-block {
-  position: inherit;
-  background-color: black;
-  color: white;
-  padding: 5px;
-  margins:5px;
-
-}
-
-
 @media (min-width: 600px) {
 
-body {
-	margin-left: 2%;
-	margin-right: 2%;
-}
 .links-section img{
 	float: left;
-	width: 33.33%;
+	width: 33.3333%;
+}
+
+.body-section {
+	flex-basis: 100%;
+	margin-left: 10%;
+	margin-right: 10%;
+	padding: 4%;
+}
+
+h1{
+	font-size: 12.5vw;
 }
 
 }
